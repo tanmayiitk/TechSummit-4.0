@@ -232,8 +232,9 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("images/cover.jpg") no-repeat;
+    background: url("images/background.jpg") no-repeat;
     background-size: cover;
+
 }
 
 .hero-content .entry-header {
