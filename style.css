@@ -232,7 +232,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding-top: 450px;
-    padding-right:500px;
+     
     background: url("images/background.jpg") no-repeat;
     background-size: 100% 100%;
 
@@ -277,10 +277,20 @@ body {
 /*------------------------------------------------------------
 ## countdown
 ------------------------------------------------------------*/
-.countdown {
+@media screen and (max-width: 600px) {
+  .countdown {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+/*.countdown {
     margin-top: 40px;
 }
-
+*/
 .countdown-holder {
     min-width: 150px;
     margin-bottom: 30px;
@@ -325,7 +335,7 @@ body {
     background: -webkit-linear-gradient(#00d0ff, #25ffbf);
     color: hsl(0, 0%, 0%);
 }
-
+herohero
 /*------------------------------------------------------------
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
