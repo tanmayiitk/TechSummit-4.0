@@ -231,9 +231,10 @@ body {
 # hero
 -----------------------------------------------------------*/
 .hero-content {
-    padding: 220px 0;
+    padding-top: 450px;
+    padding-right:500px;
     background: url("images/background.jpg") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 
 }
 
