@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
+  background-size: cover;
+  width: 350px;
+  height: 600px;
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  */transform: translate(-50%, -50%);
+}
+
+.box .but {
+  cursor: pointer;
+}
+
+.box .mask {
+  width: 100%;
+  height: 100%;
+  background-color: #004d99;
+  opacity: 0.5;
+}
+
+.box .top {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 1.3em;
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+}
+
+.box .top .menu {
+  float: left;
+}
+
+.box .top .search {
+  float: right;
+}
+
+.box .time {
+  position: absolute;
+  top: 10%;
+  color: white;
+  line-height: 30px;
+  font-family: "Lato";
+  width: 50%;
+  padding: 15px;
+  height: 100px;
+  float: left;
+}
+
+.box .time #date {
+  font-size: 2.5em;
+}
+
+.box .time #fulldate {
+  font-size: 0.8em;
+}
+
+.box .temp {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  right: 0;
+  text-align: right;
+  color: white;
+  font-size: 2.5em;
+  height: 100px;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
+.box .middle {
+  position: absolute;
+  color: white;
+  top: 28%;
+  width: 100%;
+}
+
+.box .middle #hi {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+.box .middle .timeline {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.box .middle .timeline ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+}
+
+.box .middle .timeline ul li {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 65px;
+}
+
+.box .middle .timeline ul li .hour {
+  float: left;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.box .middle .timeline ul li .hour #sub {
+  font-size: 0.5em;
+}
+
+.box .middle .timeline ul li .work {
+  float: right;
+  width: 80%;
+  height: 100%;
+  font-size: 1.2em;
+  font-family: "Raleway";
+  border-bottom: 1px solid white;
+}
+
+.box .middle .timeline ul li .work #sub {
+  font-size: 0.8em;
+}
+
+.box .bottom {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box .bottom button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.box .bottom #done {
+  color: white;
+  font-size: 1.1em;
+  background-color: Lime;
+}
+
+.box .bottom #edit {
+  color: white;
+  font-size: 1.1em;
+  background-color: Red;
+}
+
+.box .bottom #plus {
+  color: white;
+  font-size: 1.1em;
+  background-color: Purple;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col col-lg-4">
+      <div class="box">
+        <div class="mask"></div>
+        <div class="top">
+          <div class="menu but">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class="search but">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="time">
+          <span id="date">Sunday</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="temp">
+          29&#8451;<i class="wi wi-solar-eclipse"></i>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI design!</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <button id="done"><i class="fa fa-check" aria-hidden="true"></i></button>
+          <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button id="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+      </div>      
+    </div>
+    <div class="col col-lg-4">
+      <div class="box">
+        <div class="mask"></div>
+        <div class="top">
+          <div class="menu but">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class="search but">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="time">
+          <span id="date">Sunday</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="temp">
+          29&#8451;<i class="wi wi-solar-eclipse"></i>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI design!</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <button id="done"><i class="fa fa-check" aria-hidden="true"></i></button>
+          <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button id="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+      </div>      
+    </div>
+    <div class="col col-lg-4">
+      <div class="box">
+        <div class="mask"></div>
+        <div class="top">
+          <div class="menu but">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class="search but">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="time">
+          <span id="date">Sunday</span><br>
+          <span id="fulldate">September,11,2016</span>
+        </div>
+        <div class="temp">
+          29&#8451;<i class="wi wi-solar-eclipse"></i>
+        </div>
+        <div class="middle">
+          <span id="hi">Hello Hưng !</span>
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="hour">
+                  <span>8</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>have some breakfast!</span><br />
+                  <span id="sub">delicious noodle</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>9</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Working on my new UI design!</span><br />
+                  <span id="sub">nice design !</span>
+                </div>
+              </li>
+              <li>
+                <div class="hour">
+                  <span>12</span>
+                  <span id="sub">AM</span>
+                </div>
+                <div class="work">
+                  <span>Lunchtime!</span><br />
+                  <span id="sub">awesome meat stew</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom">
+          <button id="done"><i class="fa fa-check" aria-hidden="true"></i></button>
+          <button id="edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+          <button id="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+        </div>
+      </div>      
+    </div>
+  </div>
+</div>
+</body>
+</html>
