@@ -1,0 +1,168 @@
+*{
+box-sizing: border-box;
+}
+.boxc {
+  background-image: url(https://s-media-cache-ak0.pinimg.com/736x/80/91/f9/8091f9dceb2ea55fa7b57bb7295e1824.jpg);
+  background-size: cover;
+  width: 90%;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boxc .butc {
+  cursor: pointer;
+}
+
+.boxc .maskc {
+  width: 100%;
+  height: 100%;
+  background-color: #004d99;
+  opacity: 0.5;
+}
+
+.boxc .topc {
+  position: absolute;
+  color: white;
+  font-size: 1.3em;
+  width: 100%;
+  height: 20%;
+  padding-left: 15px;
+}
+
+.boxc .topc .menuc {
+  float: left;
+}
+
+.boxc .topc .searchc {
+  float: right;
+}
+
+.boxc .timec {
+  position: absolute;
+  top: 10%;
+  color: white;
+  line-height: 30px;
+  font-family: "Lato";
+  width: 50%;
+  padding-left: 15px;
+  height: 100px;
+}
+
+.boxc .timec #date {
+  font-size: 2.5em;
+}
+
+.boxc .timec #fulldate {
+  font-size: 0.8em;
+}
+
+.boxc .tempc {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  right: 0;
+  text-align: right;
+  color: white;
+  font-size: 2.5em;
+  height: 100px;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
+.boxc .middlec {
+  position: absolute;
+  color: white;
+  top: 28%;
+  width: 100%;
+}
+
+.boxc .middlec #hi {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+.boxc .middlec .timelinec {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.boxc .middlec .timelinec ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding: 0;
+}
+
+.boxc .middlec .timelinec ul li {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 65px;
+}
+
+.boxc .middlec .timelinec ul li .hourc {
+  float: left;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.boxc .middlec .timelinec ul li .hourc #sub {
+  font-size: 0.5em;
+}
+
+.boxc .middlec .timelinec ul li .workc {
+  float: right;
+  width: 80%;
+  height: 100%;
+  font-size: 1.2em;
+  font-family: "Raleway";
+  border-bottom: 1px solid white;
+}
+
+.boxc .middlec .timelinec ul li .workc #sub {
+  font-size: 0.8em;
+}
+
+.boxc .bottomc {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.boxc .bottomc button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.boxc .bottomc #done {
+  color: white;
+  font-size: 1.1em;
+  background-color: Lime;
+}
+
+.boxc .bottomc #edit {
+  color: white;
+  font-size: 1.1em;
+  background-color: Red;
+}
+
+.boxc .bottomc #plus {
+  color: white;
+  font-size: 1.1em;
+  background-color: Purple;
+}
